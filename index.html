@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズボード</title>
+    <style>
+        html,
+        body,
+        #canvas {
+            display: block;
+            width: 98%;
+            height: 90%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="quizboard" width="1100" height="500"></canvas>
+    <div>
+        <button type="button" onclick="ResetCanvas()" id="ResetButton">削除</button>
+        <button type="button" onclick="seikaiCanvas()" id="AButton">正解</button>
+        <button type="button" onclick="huseikaiCanvas()" id="BButton">不正解</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
